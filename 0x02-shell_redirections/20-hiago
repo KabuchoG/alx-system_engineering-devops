@@ -1,2 +1,2 @@
 #!/bin/bash
-echo chagCCChdgCcccccKccCCCChkdhdcCkCCjCKKHkCc | tr -d 'Cc'
+tr -d 'Cc'
