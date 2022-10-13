@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+value=1
+while [ $value -le 10 ]
+do
+	echo "Best School"
+	if [ $value -eq 9 ]
+	then
+		echo "Hi"
+	fi
+	value=$(( $value+1 ))
+done

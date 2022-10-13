@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#prints best school using until
+value=1
+until [ $value -gt 10 ]
+do
+	value=$(( $value+1 ))
+	echo "Best School"
+done

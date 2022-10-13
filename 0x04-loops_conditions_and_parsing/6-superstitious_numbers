@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#prints 1 to 20 with exceptional cases
+val=1
+while [ $val -le 20 ]
+do
+	echo "$val"
+	case $val in
+		4 )
+			echo "bad luck from China";;
+		9 )
+			echo "bad luck from Japan";;
+		17 )
+			echo "bad luck from Italy";;
+	esac
+	val=$(( $val+1 ))
+done

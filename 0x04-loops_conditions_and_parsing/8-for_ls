@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#prints the contents of the current directory
+ls > files
+for i in *;
+do
+	echo "$i" | cut -d'-' -f2
+done
