@@ -12,5 +12,5 @@ do
 	else
 		echo "Best School"
 	fi
-	val=$(( $val+1 ))
+	val=$(( val+1 ))
 done

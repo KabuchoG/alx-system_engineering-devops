@@ -12,5 +12,5 @@ do
 		17 )
 			echo "bad luck from Italy";;
 	esac
-	val=$(( $val+1 ))
+	val=$(( val+1 ))
 done

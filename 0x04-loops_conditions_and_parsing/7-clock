@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
 #print hours and minutes
-for (( h=0; h <= 12; h++ ))
+h=0
+while [ $h -le 12 ]
 do
 	echo "Hour: $h"
-	for (( minute=1; minute<=59; minute++ ))
+	m=1
+	while [ $m -lt 60 ]
 	do
-		echo "$minute"
+		echo "$m"
+		m=$(( m+1 ))
 	done
+	h=$(( h+1 ))
 done
