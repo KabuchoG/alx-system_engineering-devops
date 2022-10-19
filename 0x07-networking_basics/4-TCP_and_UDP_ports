@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#ports
+sudo netstat -lp
