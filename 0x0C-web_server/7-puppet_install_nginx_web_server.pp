@@ -1,4 +1,4 @@
-nstall nginx with puppet
+# Install nginx with puppet
 package { 'nginx':
   ensure   => '1.18.0',
   provider => 'apt',
