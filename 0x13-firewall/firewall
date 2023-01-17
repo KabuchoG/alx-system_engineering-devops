@@ -1,0 +1,50 @@
+#!/bin/bash
+
+# Stop the UFW service
+sudo ufw disable
+
+# Remove the UFW package
+sudo apt-get remove ufw -y
+
+# Remove any remaining configuration files
+sudo rm -rf /etc/ufw
+
+# Remove the UFW kernel modules
+sudo rmmod ip_tables
+sudo rmmod iptable_filter
+sudo rmmod iptable_mangle
+sudo rmmod iptable_nat
+sudo rmmod iptable_raw
+sudo rmmod ipt_MASQUERADE
+sudo rmmod ipt_REDIRECT
+sudo rmmod ipt_REJECT
+sudo rmmod ipt_LOG
+sudo rmmod ipt_ULOG
+sudo rmmod ipt_SYNPROXY
+sudo rmmod ipt_mark
+sudo rmmod ipt_limit
+sudo rmmod ipt_multiport
+sudo rmmod ipt_tos
+sudo rmmod ipt_ttl
+sudo rmmod ipt_recent
+sudo rmmod ipt_ecn
+sudo rmmod ipt_dscp
+sudo rmmod ipt_comment
+sudo rmmod xt_connmark
+sudo rmmod xt_mark
+sudo rmmod xt_rateest
+sudo rmmod xt_statistic
+sudo rmmod xt_tcpudp
+sudo rmmod xt_conntrack
+sudo rmmod xt_helper
+sudo rmmod xt_length
+sudo rmmod xt_limit
+sudo rmmod xt_mac
+sudo rmmod xt_rpfilter
+sudo rmmod xt_sockopt
+sudo rmmod xt_TCPMSS
+sudo rmmod xt_tcpmss
+sudo rmmod xt_tos
+sudo rmmod xt_ttl
+
+echo "UFW has been uninstalled successfully."
