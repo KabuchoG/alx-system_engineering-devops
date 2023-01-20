@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""REST API"""
-
+"""REST API Rest api"""
 import json
 import requests
 import sys
