@@ -6,6 +6,7 @@ import json
 import requests
 import sys
 
+
 def return_todo_list(employee_id):
     """
     Returns a list of to dos for an employee.
@@ -20,11 +21,14 @@ def return_todo_list(employee_id):
     tasks = len(to_do_list)
     tasks_complete = [task for task in to_do_list if task["completed"] is True]
     complete = len(tasks_complete)
-    print("Employee {} is done with tasks({}/{}):".format(user_details["name"], complete, tasks))
+    print("Employee {} is done with tasks({}/{}):".format(user_details["name"],
+                                                          complete, tasks))
     for n in tasks_complete:
         print("\t{}".format(n["title"]))
+        
+        
 if __name__ == "__main__":
-    if len(sys.argv) !=2:
+    if len(sys.argv) != 2:
         print("Please provide a userID")
     else:
         try:
