@@ -11,7 +11,7 @@ def return_todo_list(employee_id):
     """
     Returns a list of to dos for an employee.
     """
-    
+
     url = f"https://jsonplaceholder.typicode.com/todos?userId={employee_id}"
     res = requests.get(url)
     to_do_list = json.loads(res.text)
@@ -25,8 +25,8 @@ def return_todo_list(employee_id):
                                                           complete, tasks))
     for n in tasks_complete:
         print("\t{}".format(n["title"]))
-        
-        
+
+
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Please provide a userID")
@@ -36,4 +36,3 @@ if __name__ == "__main__":
         except Exception:
             print("Please privide a valid input")
     return_todo_list(id)
-    
