@@ -1,11 +1,16 @@
 #!/usr/bin/python3
-"""REST API Rest api - Returns to-do list information for a given employee ID."""
+"""
+REST API Rest api - Returns to-do list information for a given employee ID.
+"""
 import json
 import requests
 import sys
 
 def return_todo_list(employee_id):
-    """Returns a list of to dos for an employee."""
+    """
+    Returns a list of to dos for an employee.
+    """
+    
     url = f"https://jsonplaceholder.typicode.com/todos?userId={employee_id}"
     res = requests.get(url)
     to_do_list = json.loads(res.text)
